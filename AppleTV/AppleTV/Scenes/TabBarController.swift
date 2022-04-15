@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     private lazy var originalViewController:UIViewController = {
-        let viewController = UIViewController()
+        let viewController = UINavigationController(rootViewController: OriginalViewController())
         let tabBarItem = UITabBarItem(title: "Original", image: UIImage(systemName: "tv.fill"), tag: 0)
         viewController.tabBarItem = tabBarItem
         return viewController
