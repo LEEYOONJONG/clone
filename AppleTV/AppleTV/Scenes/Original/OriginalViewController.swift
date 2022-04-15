@@ -11,12 +11,11 @@ final class OriginalViewController:UIViewController{
         stackView.spacing = 0
         
         // MARK: temporary
-        let introSectionView = IntroSectionView()
-        let freeSectionView = UIView()
+        let introSectionView = IntroSectionView(frame: .zero)
+        let freeSectionView = FreeSectionView(frame: .zero)
         let popularSectionView = UIView()
         let seasonSectionView = UIView()
         
-        freeSectionView.backgroundColor = .systemRed
         popularSectionView.backgroundColor = .systemYellow
         seasonSectionView.backgroundColor = .systemGreen
         
