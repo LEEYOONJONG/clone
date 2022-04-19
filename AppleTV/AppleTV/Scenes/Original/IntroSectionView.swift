@@ -6,7 +6,7 @@ final class IntroSectionView:UIView{
     private lazy var imageView:UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.backgroundColor = .label
+        imageView.backgroundColor = .black
         return imageView
     }()
     private lazy var descriptionLabel:UILabel = {
@@ -15,7 +15,7 @@ final class IntroSectionView:UIView{
         
         
         label.text = "매달 찾아오는 새로운 오리지널.\n가족과 공유하세요.\n온/오프라인에서 감상하세요."
-        label.textColor = .systemBackground
+        label.textColor = .white
         label.font = .systemFont(ofSize: 15, weight: .bold)
         
         // 줄 간격 & 라벨 정렬
@@ -32,22 +32,22 @@ final class IntroSectionView:UIView{
         let button = UIButton()
         button.setTitle("무료 체험 시작", for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
-        button.setTitleColor(.label, for: .normal)
-        button.backgroundColor = .systemBackground
+        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .white
         button.layer.cornerRadius = 10
         return button
     }()
     private lazy var freeTrialLabel:UILabel = {
         let label = UILabel()
         label.text = "7일 무료 체험 후 월 ₩6,500"
-        label.textColor = .systemBackground
+        label.textColor = .white
         label.font = .systemFont(ofSize: 12, weight: .regular)
         return label
     }()
     private lazy var logoLabel:UILabel = {
         let label = UILabel()
         label.text = "tv+"
-        label.textColor = .systemBackground
+        label.textColor = .white
         label.font = .systemFont(ofSize: 80, weight: .semibold)
         return label
     }()

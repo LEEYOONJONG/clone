@@ -1,27 +1,21 @@
 import SnapKit
 import UIKit
 
-final class FreeSectionView:UIView{
+final class CommingSoonSectionView:UIView{
     private lazy var titleLabel:UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 22, weight: .bold)
-        label.text = "Apple TV+ 무료로 맛보기!"
+        label.text = "출시 예정작"
         return label
     }()
     private lazy var subTitleLabel:UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         label.textColor = .systemGray2
-        label.text = "지금 감상하세요."
+        label.text = "지금 재생 대기 목록에 추가하세요."
         return label
     }()
-    private lazy var showAllButton:UIButton = {
-        let button = UIButton()
-        button.setTitle("전체 보기", for: .normal)
-        button.setTitleColor(.systemBlue, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 15, weight: .regular)
-        return button
-    }()
+    
     
     private lazy var collectionView:UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -31,7 +25,7 @@ final class FreeSectionView:UIView{
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.register(FreeSectionCollectionViewCell.self, forCellWithReuseIdentifier: "FreeSectionCollectionViewCell")
+        collectionView.register(CommingSoonSectionCollectionViewCell.self, forCellWithReuseIdentifier: "CommingSoonSectionCollectionViewCell")
         return collectionView
     }()
     override init(frame: CGRect) {
@@ -44,20 +38,20 @@ final class FreeSectionView:UIView{
     }
 }
 
-extension FreeSectionView:UICollectionViewDataSource{
+extension CommingSoonSectionView:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         6
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FreeSectionCollectionViewCell", for: indexPath) as? FreeSectionCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CommingSoonSectionCollectionViewCell", for: indexPath) as? CommingSoonSectionCollectionViewCell
         cell?.setup()
         return cell ?? UICollectionViewCell()
     }
     
     
 }
-extension FreeSectionView:UICollectionViewDelegateFlowLayout{
+extension CommingSoonSectionView:UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 240, height: 240)
     }
@@ -69,20 +63,16 @@ extension FreeSectionView:UICollectionViewDelegateFlowLayout{
     }
 }
 
-private extension FreeSectionView{
+private extension CommingSoonSectionView{
     func setupViews(){
         
         
         collectionView.backgroundColor = .clear
-        [titleLabel, showAllButton, subTitleLabel, collectionView].forEach{
+        [titleLabel, subTitleLabel,collectionView].forEach{
             addSubview($0)
         }
         titleLabel.snp.makeConstraints{
             $0.leading.top.equalToSuperview().inset(16)
-        }
-        showAllButton.snp.makeConstraints{
-            $0.trailing.equalToSuperview().inset(16)
-            $0.centerY.equalTo(titleLabel.snp.centerY)
         }
         subTitleLabel.snp.makeConstraints{
             $0.leading.equalToSuperview().inset(16)
@@ -96,6 +86,6 @@ private extension FreeSectionView{
         }
     }
 }
-extension FreeSectionView{
+extension CommingSoonSectionView{
     
 }

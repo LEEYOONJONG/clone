@@ -1,7 +1,7 @@
 import UIKit
 import SnapKit
 
-final class FreeSectionCollectionViewCell:UICollectionViewCell{
+final class LatestOriginalSectionCollectionViewCell:UICollectionViewCell{
     private lazy var imageView:UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 10
@@ -30,14 +30,14 @@ final class FreeSectionCollectionViewCell:UICollectionViewCell{
     }()
     func setup(){
         setupLayout()
-        titleLabel.text = "'파친코' - PACHINKO 시즌 1, 에피소드 1"
-        episodeLabel.text = "제1장"
-        descriptionLabel.text = "1920년대의 한국, 1. 이대로로 실행해도 아무런 값이 없기에 임의의 값을 설정해줘야. 커스텀셀을 컬렉션뷰에서 설정해주겠다.register를 방금만든 클래스로 바꾸고 cell을 초기화하는 곳에서도 as? 이용해 다운캐스팅."
+        titleLabel.text = "드라마"
+        episodeLabel.text = "'로어: 세상을 향한 함성' - Roar"
+        descriptionLabel.text = "생생한 이야기를 여러 장르에 걸쳐 선보이는 블랙 코미디 시리즈."
         imageView.backgroundColor = .systemGray
     }
 }
 
-private extension FreeSectionCollectionViewCell{
+private extension LatestOriginalSectionCollectionViewCell{
     
     func setupLayout(){
         [imageView, titleLabel, episodeLabel, descriptionLabel].forEach{

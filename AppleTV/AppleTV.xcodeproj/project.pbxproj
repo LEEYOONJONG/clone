@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9891C7E1280EB0A6002746C4 /* PopularSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7E0280EB0A6002746C4 /* PopularSectionView.swift */; };
+		9891C7E3280EB16E002746C4 /* PopularSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7E2280EB16E002746C4 /* PopularSectionCollectionViewCell.swift */; };
+		9891C7E9280F00CA002746C4 /* SeasonSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7E8280F00CA002746C4 /* SeasonSectionView.swift */; };
+		9891C7EB280F00E2002746C4 /* SeasonSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7EA280F00E2002746C4 /* SeasonSectionCollectionViewCell.swift */; };
+		9891C7ED280F044F002746C4 /* LatestOriginalSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7EC280F044F002746C4 /* LatestOriginalSectionView.swift */; };
+		9891C7EF280F045A002746C4 /* LatestOriginalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7EE280F045A002746C4 /* LatestOriginalCollectionViewCell.swift */; };
+		9891C7F1280F2696002746C4 /* CommingSoonSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7F0280F2696002746C4 /* CommingSoonSectionView.swift */; };
+		9891C7F3280F26BF002746C4 /* CommingSoonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9891C7F2280F26BF002746C4 /* CommingSoonCollectionViewCell.swift */; };
 		98BC2C502809792100067CF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2C4F2809792100067CF8 /* AppDelegate.swift */; };
 		98BC2C522809792100067CF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2C512809792100067CF8 /* SceneDelegate.swift */; };
 		98BC2C542809792100067CF8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC2C532809792100067CF8 /* TabBarController.swift */; };
@@ -21,6 +29,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9891C7E0280EB0A6002746C4 /* PopularSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopularSectionView.swift; path = ../../../../../../../../Documents/PopularSectionView.swift; sourceTree = "<group>"; };
+		9891C7E2280EB16E002746C4 /* PopularSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		9891C7E8280F00CA002746C4 /* SeasonSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonSectionView.swift; sourceTree = "<group>"; };
+		9891C7EA280F00E2002746C4 /* SeasonSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonSectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		9891C7EC280F044F002746C4 /* LatestOriginalSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestOriginalSectionView.swift; sourceTree = "<group>"; };
+		9891C7EE280F045A002746C4 /* LatestOriginalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestOriginalCollectionViewCell.swift; sourceTree = "<group>"; };
+		9891C7F0280F2696002746C4 /* CommingSoonSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoonSectionView.swift; sourceTree = "<group>"; };
+		9891C7F2280F26BF002746C4 /* CommingSoonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommingSoonCollectionViewCell.swift; sourceTree = "<group>"; };
 		98BC2C4C2809792100067CF8 /* AppleTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98BC2C4F2809792100067CF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98BC2C512809792100067CF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +108,14 @@
 				98BC2C6D280983EB00067CF8 /* IntroSectionView.swift */,
 				98BC2C6F280995C600067CF8 /* FreeSectionView.swift */,
 				98BC2C712809A3E100067CF8 /* FreeSectionCollectionViewCell.swift */,
+				9891C7E0280EB0A6002746C4 /* PopularSectionView.swift */,
+				9891C7E2280EB16E002746C4 /* PopularSectionCollectionViewCell.swift */,
+				9891C7E8280F00CA002746C4 /* SeasonSectionView.swift */,
+				9891C7EA280F00E2002746C4 /* SeasonSectionCollectionViewCell.swift */,
+				9891C7EC280F044F002746C4 /* LatestOriginalSectionView.swift */,
+				9891C7EE280F045A002746C4 /* LatestOriginalCollectionViewCell.swift */,
+				9891C7F0280F2696002746C4 /* CommingSoonSectionView.swift */,
+				9891C7F2280F26BF002746C4 /* CommingSoonCollectionViewCell.swift */,
 			);
 			path = Original;
 			sourceTree = "<group>";
@@ -174,12 +198,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9891C7E3280EB16E002746C4 /* PopularSectionCollectionViewCell.swift in Sources */,
+				9891C7E9280F00CA002746C4 /* SeasonSectionView.swift in Sources */,
 				98BC2C722809A3E100067CF8 /* FreeSectionCollectionViewCell.swift in Sources */,
 				98BC2C542809792100067CF8 /* TabBarController.swift in Sources */,
+				9891C7EF280F045A002746C4 /* LatestOriginalCollectionViewCell.swift in Sources */,
+				9891C7ED280F044F002746C4 /* LatestOriginalSectionView.swift in Sources */,
 				98BC2C502809792100067CF8 /* AppDelegate.swift in Sources */,
+				9891C7EB280F00E2002746C4 /* SeasonSectionCollectionViewCell.swift in Sources */,
 				98BC2C522809792100067CF8 /* SceneDelegate.swift in Sources */,
+				9891C7F1280F2696002746C4 /* CommingSoonSectionView.swift in Sources */,
+				9891C7F3280F26BF002746C4 /* CommingSoonCollectionViewCell.swift in Sources */,
 				98BC2C6E280983EB00067CF8 /* IntroSectionView.swift in Sources */,
 				98BC2C70280995C600067CF8 /* FreeSectionView.swift in Sources */,
+				9891C7E1280EB0A6002746C4 /* PopularSectionView.swift in Sources */,
 				98BC2C6C28097EAA00067CF8 /* OriginalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

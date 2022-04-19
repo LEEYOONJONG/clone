@@ -13,13 +13,13 @@ final class OriginalViewController:UIViewController{
         // MARK: temporary
         let introSectionView = IntroSectionView(frame: .zero)
         let freeSectionView = FreeSectionView(frame: .zero)
-        let popularSectionView = UIView()
-        let seasonSectionView = UIView()
+        let popularSectionView = PopularSectionView(frame: .zero)
+        let seasonSectionView = SeasonSectionView(frame: .zero)
+        let latestOriginalSectionView = LatestOriginalSectionView(frame: .zero)
+        let commingSoonSectionView = CommingSoonSectionView(frame: .zero)
+
         
-        popularSectionView.backgroundColor = .systemYellow
-        seasonSectionView.backgroundColor = .systemGreen
-        
-        [introSectionView,freeSectionView, popularSectionView, seasonSectionView].forEach{
+        [introSectionView, freeSectionView, popularSectionView, seasonSectionView, latestOriginalSectionView, commingSoonSectionView].forEach{
             stackView.addArrangedSubview($0)
         }
         return stackView
@@ -29,6 +29,7 @@ final class OriginalViewController:UIViewController{
         setupNavigationController()
         setupLayout()
     }
+    
 }
 private extension OriginalViewController{
     func setupNavigationController(){
@@ -54,4 +55,5 @@ private extension OriginalViewController{
             $0.edges.equalToSuperview()
         }
     }
+
 }
